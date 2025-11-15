@@ -62,19 +62,18 @@ form.addEventListener("submit", (e) => {
             }
         }
         random()
-
-        function copy() {
-            display.select();
-            display.setSelectionRange(0, 99999);
-
-            navigator.clipboard.writeText(display.value)
-
-            alert(`Copied Successfully: ${display.value}`)
-        }
-        copy_btn.addEventListener("click", copy)
     }
 
 });
+
+
+copy_btn.addEventListener("click", () => {
+    display.select();
+    display.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(display.value)
+    alert(`Copied Successfully: ${display.value}`)
+})
 
 window.addEventListener("load", () => {
     const footer = document.body.querySelector("footer");

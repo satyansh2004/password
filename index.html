@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Password Generator</title>
+</head>
+
+<body class="bg-gray-50">
+
+  <div id="main" class="w-1/2 max-lg:w-[70%] max-md:w-[80%] max-sm:w-[95%] flex flex-col gap-5 m-auto mt-10 items-center">
+    <h2 id="title" class="text-gray-900 text-4xl mb-[20px]">Password Generator</h2>
+    <form action="" id="app"
+      class="border-[1px] border-gray-400 rounded-[4px] p-[35px] flex flex-col gap-5 w-full text-[16px] bg-white shadow-sm shadow-gray-400/20">
+      <input type="number" name="" id="length_password" placeholder="Enter password length"
+        class="border-[1.5px] border-[#b1b1b1] rounded-[4px] p-3 w-full">
+      <div id="options" class="my-2">
+        <span class="flex gap-[10px] text-lg">
+          <input type="checkbox" name="numbers" id="numbers">
+          <label for="numbers">Numbers</label>
+        </span>
+        <span class="flex gap-[10px] text-lg">
+          <input type="checkbox" name="symbols" id="symbols">
+          <label for="symbols">Symbols</label>
+        </span>
+        <span class="flex gap-[10px] text-lg">
+          <input type="checkbox" name="toUpperCase" id="toUpperCase">
+          <label for="toUpperCase">Upper Case</label>
+        </span>
+      </div>
+      <button id="gen"
+        class="w-full p-3 border rounded-[4px] border-gray-700 bg-gray-700 text-white hover:text-gray-900 hover:bg-white transition ease-in">Generate</button>
+    </form>
+
+    <div id="output" class="text-[16px] w-full flex flex-col items-center gap-2">
+      <h3 class="text-gay-900 text-2xl">Output</h3>
+
+      <div class="w-full flex flex-row items-center gap-0 justify-center">
+
+        <input type="text" name="" id="outputs" readonly placeholder="Output will be displayed here"
+          class="border-t-[1.5px] border-l-[1.5px] border-b-[1.5px] border-[#b1b1b1] rounded-l-[4px] p-3 w-[80%]">
+
+        <button id="copy" class="border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-[#b1b1b1] rounded-r-[4px] p-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

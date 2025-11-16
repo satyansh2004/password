@@ -4,6 +4,7 @@ A clean, fast, and responsive **Password Generator App** built using **HTML, Jav
 Generate strong, random passwords with multiple customization options and copy them instantly — no limits, no restrictions.
 
 👉 **Live Demo:** https://randomified.netlify.app  
+
 👉 **Follow me on X (Twitter):** https://x.com/SatyanshChand
 
 ---
@@ -42,7 +43,7 @@ Generate strong, random passwords with multiple customization options and copy t
 
 ```bash
 # Clone the repo
-git clone <your-repo-link>
+git clone https://github.com/satyansh2004/password.git
 
 # Open folder
 cd password-generator
